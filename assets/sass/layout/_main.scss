@@ -1,0 +1,306 @@
+// container principal
+.main_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+//contenido del container
+.main__content {
+    margin: 2px;
+    width: 660px;
+    height: auto;
+    border: 2px solid gray;
+}
+
+//contenido de cursos html css y sass
+
+.course__ {
+
+    &content {
+        margin: 10px;
+        border: 1px solid gray;
+        border-style: dotted;
+    }
+
+    &image {
+        width: 620px;
+        height: auto;
+        margin: 10px;
+    }
+
+    &title {
+        margin: 10px;
+        font-family: $poppins;
+        font-weight: $bold;
+    }
+
+    &text {
+        margin: 10px;
+        font-family: $ubuntu;
+        font-weight: $regular;
+
+    }
+
+    &instructor {
+        margin: 10px;
+        font-family: $poppins;
+        font-weight: $bold;
+    }
+
+}
+
+.icons__course {
+    margin: 10px;
+}
+
+
+//contenido de about
+
+.content__about {
+    margin: 2px;
+    width: 660px;
+    height: auto;
+    border: 2px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content__about-container {
+    width: 660px;
+    height: 350px;
+}
+
+.about__ {
+    &image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px gray solid;
+        margin-top: 10px;
+        margin-left: 240px;
+    }
+
+    &title {
+        text-align: center;
+        margin-top: 10px;
+        font-family: $poppins;
+        font-weight: $bold;
+    }
+
+    &text {
+        margin: 20px;
+        font-family: $ubuntu;
+        font-weight: $regular;
+    }
+}
+
+//mas cursos
+
+.container__more-courses {
+    width: 660px;
+    height: 461px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container__title {
+    width: 600px;
+    height: 35px;
+    margin-left: 20px;
+    background-color: gray;
+}
+
+.title__more-courses {
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.list__more-courses {
+    list-style: circle;
+    margin-top: 10px;
+}
+
+.item__course {
+    text-decoration: none;
+    color: black;
+}
+
+//media queries main
+
+@media (max-width: 376px) {
+    .main__content {
+        margin: 2px;
+        width: 100%;
+        height: auto;
+        border: 2px solid gray;
+    }
+
+    .course__ {
+
+        &content {
+            margin: 10px;
+            border: 1px solid gray;
+
+        }
+
+        &image {
+            width: 95%;
+            height: auto;
+            margin: 10px;
+        }
+
+        &title {
+            margin: 10px;
+            font-family: $poppins;
+            font-weight: $bold;
+        }
+
+        &text {
+            margin: 10px;
+            font-family: $ubuntu;
+            font-weight: $regular;
+        }
+
+        &instructor {
+            margin: 10px;
+            font-family: $poppins;
+            font-weight: $bold;
+        }
+
+    }
+
+    .content__about {
+        margin: 2px;
+        width: 100%;
+        height: auto;
+        border: 2px solid gray;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content__about-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about__ {
+        &image {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            border: 2px gray solid;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+
+        &title {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        &text {
+            margin: 20px;
+        }
+    }
+
+    .container__more-courses {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .container__title {
+        width: 100%;
+        height: auto;
+        margin-right: 50px;
+        background-color: gray;
+    }
+
+    .title__more-courses {
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+
+    .list__more-courses {
+        list-style: circle;
+        margin-top: 3px;
+    }
+
+    .item__course {
+        text-decoration: none;
+        color: black;
+    }
+
+    .web_animation {
+        max-width: 150px;
+        max-height: 150px;
+        margin: 10px;
+        margin-left: 80px;
+    }
+
+}
+
+//animacion 
+.web_animation {
+    width: 600px;
+    height: 200px;
+}
+
+.animation_slash {
+    animation-name: animation-1;
+    position: relative;
+    animation: animation-1 3s linear infinite;
+}
+
+@keyframes animation-1 {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 100px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.animation__gear {
+    padding: 10px;
+    animation-name: animation-2;
+    position: relative;
+    animation: animation-2 3s linear infinite;
+    transform-origin: 80% 80%;
+}
+
+@keyframes animation-2 {
+    0% {
+        transform: rotate(0deg);
+        padding-right: 0px;
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+        padding-right: 100px;
+    }
+}

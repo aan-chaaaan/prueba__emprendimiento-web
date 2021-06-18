@@ -1,0 +1,14 @@
+//vendors
+@import 'vendors/node_modules/bootstrap/scss/bootstrap.scss';
+//abstracts
+@import 'abstracts/variables';
+//base
+@import 'base/reset';
+@import 'base/base';
+//layout
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+//components
+@import 'components/buttons';
+@import 'components/navigation';

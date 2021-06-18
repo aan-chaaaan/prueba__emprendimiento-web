@@ -1,0 +1,23 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//links
+.item_list:link,
+.item_list:visited,
+.item_list:active {
+    text-decoration: none;
+    color: white;
+}
+
+.item__course:link,
+.item__course:visited,
+.item__course:active,
+.item__course:hover {
+    text-decoration: none;
+    color: black;
+}
