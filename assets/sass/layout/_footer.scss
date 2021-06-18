@@ -24,10 +24,17 @@
     }
 }
 
+
+
 .form__mail {
     border-radius: 6%;
     width: 150px;
 }
+
+.form__mail:hover {
+    background-color: $tangerine;
+}
+
 
 @media (max-width: 376px) {
     .footer__container {

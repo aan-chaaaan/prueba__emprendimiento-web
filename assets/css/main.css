@@ -9936,21 +9936,6 @@ body {
   box-sizing: border-box;
 }
 
-.item_list:link,
-.item_list:visited,
-.item_list:active {
-  text-decoration: none;
-  color: white;
-}
-
-.item__course:link,
-.item__course:visited,
-.item__course:active,
-.item__course:hover {
-  text-decoration: none;
-  color: black;
-}
-
 .header__container {
   width: 100%;
   height: 50%;
@@ -10087,7 +10072,7 @@ body {
 
 .item__course {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 @media (max-width: 376px) {
@@ -10197,6 +10182,65 @@ body {
     margin-left: 80px;
   }
 }
+.footer__container {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__text {
+  color: white;
+}
+.footer__text-rights {
+  color: white;
+}
+.footer__form {
+  border-radius: 20%;
+}
+
+.form__mail {
+  border-radius: 6%;
+  width: 150px;
+}
+
+.form__mail:hover {
+  background-color: #FFAF6D;
+}
+
+@media (max-width: 376px) {
+  .footer__container {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer__button {
+  border-radius: 10%;
+  background-color: #FFA500;
+}
+
+.footer__button:hover {
+  background-color: #FFF;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar__logo {
+  width: 35px;
+  height: auto;
+}
+
 .web_animation {
   width: 600px;
   height: 200px;
@@ -10236,60 +10280,6 @@ body {
     transform: rotate(360deg);
     padding-right: 100px;
   }
-}
-.footer__container {
-  width: 100%;
-  height: 70px;
-  background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer__text {
-  color: white;
-}
-.footer__text-rights {
-  color: white;
-}
-.footer__form {
-  border-radius: 20%;
-}
-
-.form__mail {
-  border-radius: 6%;
-  width: 150px;
-}
-
-@media (max-width: 376px) {
-  .footer__container {
-    width: 100%;
-    height: 100px;
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.footer__button {
-  border-radius: 10%;
-  background-color: #FFA500;
-}
-
-.footer__button:hover {
-  background-color: #FFF;
-}
-
-.navbar {
-  background-color: black;
-}
-
-.navbar__logo {
-  width: 35px;
-  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

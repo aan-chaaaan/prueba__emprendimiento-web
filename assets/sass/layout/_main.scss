@@ -131,8 +131,9 @@
 
 .item__course {
     text-decoration: none;
-    color: black;
+    color: $an-black;
 }
+
 
 //media queries main
 
@@ -256,51 +257,4 @@
         margin-left: 80px;
     }
 
-}
-
-//animacion 
-.web_animation {
-    width: 600px;
-    height: 200px;
-}
-
-.animation_slash {
-    animation-name: animation-1;
-    position: relative;
-    animation: animation-1 3s linear infinite;
-}
-
-@keyframes animation-1 {
-    0% {
-        left: 0px;
-    }
-
-    50% {
-        left: 100px;
-    }
-
-    100% {
-        left: 0px;
-    }
-}
-
-.animation__gear {
-    padding: 10px;
-    animation-name: animation-2;
-    position: relative;
-    animation: animation-2 3s linear infinite;
-    transform-origin: 80% 80%;
-}
-
-@keyframes animation-2 {
-    0% {
-        transform: rotate(0deg);
-        padding-right: 0px;
-
-    }
-
-    100% {
-        transform: rotate(360deg);
-        padding-right: 100px;
-    }
 }
